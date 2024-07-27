@@ -7,15 +7,202 @@
 </head>
 <body>
     <hr>
+    <section class="my-info">
     <h2>My Contact Details</h1>
-    <p>
-        My Fictional Address<br><br>
-        077263718463<br><br>
-        myemail@gmail.com<br>
+        <p>
+            <b>Address: </b>20, Mayowa close, Lagos state, Nigeria.<br><br>
+            <b>Phone: </b>+2347123456789<br><br>
+            <b>email: </b>janetkalu@gmail.com<br>
 
-    </p>
-    
-    <hr>
+        </p>
+    </section>    
+    <hr><hr>
+    <br>
+    <form action="./Success.html" method="get">
+        <fieldset>
+            <legend>
+                <b>Sign Up for your weekly frontend newsletter</b>
+            </legend>
+            <section class="your-info">
+        
+                <!--Name-->
+                <label for="full-name"><b>Name</b>:  
+                    <input 
+                        type="text" 
+                        name="full-name"
+                        id="full-name"
+                        placeholder="Jane Doe"
+                        required>
+                </label><br>
+                    <!--Email-->
+                <label for="email"><b>Email</b>:
+                     <input 
+                        type="email" 
+                        name="email" 
+                        id="email"
+                        placeholder="janedoe@testmail.com"
+                        required>
+                </label> <br>
+                    <!--Phone-->
+                <label for="phone"><b>Phone</b>:
+                    <input 
+                        type="tel" 
+                        name="phone" 
+                        id="phone"
+                        placeholder="+2347000000000"
+                        required>
+                </label><br>
+                <!--DOB-->
+                <label for="dob"><b>DOB</b>:
+                    <input type="date" name="dob" id="dob" required>
+                </label>
+                <!--Gender-->
+                <div>
+                    <p>
+                        <b>Select you Gender</b>:
+                    </p>
+                    <label for="male"> 
+                        <input 
+                            type="radio" 
+                            name="gender"
+                            id="male"
+                            required
+                            value="Male">Male
+                    </label><br>
+                    <label for="female"> 
+                        <input 
+                            type="radio" 
+                            name="gender"
+                            id="female"
+                            value="Female">Female
+                    </label><br>
+                    <label for="other"> 
+                        <input 
+                            type="radio" 
+                            name="gender"
+                            id="other"
+                            value="Other">Other
+                    </label>
+
+                </div>
+                <!--Skills-->
+                <div>
+                    <p>
+                        <b>Areas of interest</b>: 
+                    </p>
+                    <label for="html5"> 
+                        <input 
+                            type="checkbox" 
+                            name="frontend"
+                            id="html5"
+                            value="html5">HTML5
+                    </label><br>
+                    <label for="css3"> 
+                        <input 
+                            type="checkbox" 
+                            name="frontend"
+                            id="css3"
+                            value="css3">CSS3
+                    </label><br>
+                    <label for="js"> 
+                        <input 
+                            type="checkbox" 
+                            name="frontend"
+                            id="js"
+                            value="javascript">Javascript
+                    </label><br>
+                    <label for="react"> 
+                        <input 
+                            type="checkbox" 
+                            name="frontend"
+                            id="react"
+                            value="react">React
+                    </label><br>
+                    <label for="bs"> 
+                        <input 
+                            type="checkbox" 
+                            name="frontend"
+                            id="bs"
+                            value="bootstrap">Bootstrap
+                    </label><br>
+                    <label for="tw"> 
+                        <input 
+                            type="checkbox" 
+                            name="frontend"
+                            id="tw"
+                            value="tailwind">Tailwind
+                    </label><br>
+                    <label for="vue"> 
+                        <input 
+                            type="checkbox" 
+                            name="frontend"
+                            id="vue"
+                            value="vue">Vue
+                    </label>
+                </div><br>
+                <div>
+                    <label for="country"><b>Select Your Country: </b></label>
+                    <select name="country" id="country">
+                        <option value="nigeria">Nigeria</option>
+                        <option value="ghana">Ghana</option>
+                        <option value="germany">Germany</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="usa">United States of America</option>
+                        <option value="canada">Canada</option>
+                        <option value="south africa">South Africa</option>
+                        <option value="india">India</option>
+                        <option value="gabon">Gabon</option>
+                        <option value="france">France</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="jamaica">Jamaica</option>
+                        <option value="benin">Benin Republic</option>
+                        <option value="australia">Australia</option>
+                        <option value="uae">United Arab Emirate</option>
+                        <option value="niger">Niger</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <label for="message"><b>Message Us: </b></label> <br>
+                <textarea 
+                name="message" 
+                id="message"
+                maxlength="250"
+                cols="70"
+                rows="10"
+                placeholder="Type your message here..."></textarea>
+                
+            </section>
+
+            <section class="consent">
+                <small>
+                    <p>This website uses cookies to help us provide better services. When you sign up, your data will be used for market survey. <br>
+                    <strong>Information security is critical to our business</strong>. We work to protect the security of your Information
+                    during transmission by using <em>Secure Sockets Layer (SSL)</em> software, which <strong>encrypts</strong> the information you input.<br>
+                    We store information gathered on <em>secure</em> computers located inside a <em>locked</em> data centre.
+                    </p>
+                </small>
+                <label for="user_consent_yes"> 
+                    <input 
+                        type="radio" 
+                        name="yes"
+                        id="user_consent_yes"
+                        value="Yes"
+                        required>Yes, I consent
+                </label><br>
+                <label for="user_consent_no"> 
+                    <input 
+                        type="radio" 
+                        name="no"
+                        id="user_consent_no"
+                        value="No">No, I do not consent
+                </label><br><br>
+                <button type="submit">Submit</button>
+                
+
+
+            </section>
+        </fieldset>
+    </form>
     <a href="../index.html">Back To Homepage</a>
     
 </body>
